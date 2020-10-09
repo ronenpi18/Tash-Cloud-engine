@@ -1,0 +1,37 @@
+//            final RatpackServer start = RatpackServer.start(server -> server
+        //                    .serverConfig(c -> c.port(PORT))
+        //                    .handlers(chain -> chain
+        //                        .get("health", ctx -> ctx.render("OK\n"));
+        //                        .get("about", ctx -> ctx.render("we are gentleman"));
+        //                        .get("now", ctx -> ctx.render(ZonedDateTime.now() + "\n"));
+        //                        .get("locnow", ctx -> ctx.render(LocalDateTime.now() + "\n"));
+        //                        .get("locale", ctx -> ctx.render(Locale.getDefault() + "\n"));
+        //                        .get("timezone", ctx -> ctx.render(TimeZone.getDefault().getID() + "\n"));
+        //                        .get("charset", ctx -> ctx.render(Charset.defaultCharset().name() + "\n"));
+        //                        .get("dbname", ctx -> ctx.render(RouterHandler::handleDb));
+        //                        .get("greet", ctx -> ctx.render("Hello, " + Optional.ofNullable(ctx.getRequest().getQueryParams().get("name")).orElse("Stranger") + "!\n"));
+        //                        .get("args", ctx -> ctx.render(Arrays.asList(args).toString() + "\n"));
+
+        //                        chain.get("env", ctx -> printMap(ctx, System.getenv()));
+        //                        chain.get("env/:name", ctx -> printMapEntry(ctx, System.getenv(), ctx.getPathTokens().get("name")));
+        //                        chain.get("prop", ctx -> printMap(ctx, System.getProperties()));
+        //                        chain.get("prop/:name", ctx -> printMapEntry(ctx, System.getProperties(), ctx.getPathTokens().get("name")));
+        //                        chain.get("heap", ctx -> printHeap(ctx));
+        //                        chain.get("mem", ctx -> printMap(ctx, map));
+        //                        chain.path("mem/:key", ctx2 -> ctx2.byMethod(chain2 -> chain2
+        //                                .get(ctx -> printMapEntry(ctx, map, ctx.getPathTokens().get("key")))
+        //                                .put(ctx -> storeMapEntry(ctx, map, ctx.getPathTokens().get("key"), ctx.getRequest().getQueryParams().get("value")))
+        //                        ));
+        //                        chain.path("file", ctx2 -> ctx2.byMethod(chain2 -> chain2
+        //                                .get(ctx -> printFile(ctx, Paths.get(Optional.ofNullable(ctx.getRequest().getQueryParams().get("path")).orElse("/"))))
+        //                                .put(ctx -> storeFile(ctx, Paths.get(Optional.ofNullable(ctx.getRequest().getQueryParams().get("path")).orElse("/")), ctx.getRequest().getQueryParams().get("content")))
+        //                        ));
+        //                        chain.get("session", ctx -> handleSession(ctx, ctx.getRequest().getQueryParams().get("logout") != null));
+        //                        chain.post("log", ctx -> {
+        //                            logger.info(Optional.ofNullable(ctx.getRequest().getQueryParams().get("message")));
+        //                            ctx.render("OK\n");
+        //                        });
+        //                        chain.post("exit", ctx -> System.exit(1));
+        //                    ));
+
+        //            start.start();
